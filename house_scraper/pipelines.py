@@ -189,6 +189,7 @@ import pyodbc
 import logging
 from scrapy.exceptions import DropItem
 from itemadapter import ItemAdapter
+import os
 
 class SaveToSQLServerPipeline:
     def __init__(self):
@@ -196,8 +197,8 @@ class SaveToSQLServerPipeline:
             'DRIVER={ODBC Driver 17 for SQL Server};'
             'SERVER=house-server.database.windows.net;'
             'DATABASE=house_db;'
-            f'UID={DATABASE_USERNAME};' 
-            F'PWD={DATABASE_PASSWORD}'
+            f'UID={os.environ.get('DATABASE_USERNAME')};' 
+            F'PWD={os.environ.get('DATABASE_PASSWORD')}'
         )
         self.cursor = self.conn.cursor()
         

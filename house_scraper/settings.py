@@ -7,12 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import os
+
 BOT_NAME = "house_scraper"
 
 SPIDER_MODULES = ["house_scraper.spiders"]
 NEWSPIDER_MODULE = "house_scraper.spiders"
 
-SCRAPEOPS_API_KEY = SCRAPEOPS_API_KEY
+SCRAPEOPS_API_KEY = os.environ.get('SCRAPEOPS_API_KEY')
 SCRAPEOPS_ENDPOINT = "https://headers.scrapeops.io/v1/user-agents"
 SCRAPEOPS_FAKE_USER_AGENT_ACTIVE = True
 SCRAPEOPS_NUM_RESULTS = 5
