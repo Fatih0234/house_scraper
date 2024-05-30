@@ -22,6 +22,8 @@ This <a href="https://housescraper-fatihkarahan.streamlit.app/" >webapp</a> had 
 - Deploy the app on the cloud.
 </p>
 
+<h3 align="center">Learn about myself</h1>
+
 - 🌱 I’m currently learning **ML Algorithms, Cloud Computing, Data Modelling, Database Management, Data Analysis**
 
 - 💬 Ask me about **python, data science, cloud-computing and webscrapping** 
