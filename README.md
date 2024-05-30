@@ -6,12 +6,19 @@
 <p align="left">
 This <a href="https://housescraper-fatihkarahan.streamlit.app/" >webapp</a> had a few stages to come True. 
 - Web scrapping
+  
 - Saving the output on the cloud
+  
 - Setting up a cron job to autoamte the web scrapping
+  
 - Configuren Azure services like SQL database, Virtual Machine etc.
+
 - Fit the data to our model and play with it.
+  
 - Explore the data
+  
 - Put the webapp together with the help of streamlit.
+  
 - Deploy the app on the cloud.
 </p>
 
