@@ -5,9 +5,8 @@
 
 
 # useful for handling different item types with a single interface
-import mysql.connector
+
 from datetime import datetime
-from mysql.connector import IntegrityError
 
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
@@ -197,8 +196,8 @@ class SaveToSQLServerPipeline:
             'DRIVER={ODBC Driver 17 for SQL Server};'
             'SERVER=house-server.database.windows.net;'
             'DATABASE=house_db;'
-            f'UID={os.environ.get('DATABASE_USERNAME')};' 
-            F'PWD={os.environ.get('DATABASE_PASSWORD')}'
+            f"UID={os.environ.get('DATABASE_USERNAME')};" 
+            f"PWD={os.environ.get('DATABASE_PASSWORD')}"
         )
         self.cursor = self.conn.cursor()
         
